@@ -427,3 +427,82 @@ footer {
         padding: 0.8rem;
     }
 }
+
+/* Footer renovado */
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.account-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.account-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.account-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 2px solid var(--accent);
+}
+
+.account-info h4 {
+    margin-bottom: 0.3rem;
+    color: var(--accent);
+}
+
+.account-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.account-link {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.account-link:hover {
+    color: var(--primary);
+}
+
+.copyright {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
